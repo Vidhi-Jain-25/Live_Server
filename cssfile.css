@@ -1,0 +1,153 @@
+
+html,body
+{   
+    background-color: rgb(7, 4, 15);
+    color: white;
+    height: 98%;
+}
+
+h1{
+    margin:1%;
+    color:white;
+    text-shadow: 0.4vw 0.4vh 0.2vw yellow;
+    text-align: center;
+    font-size: 3vw;
+    word-spacing: 1vw;
+    margin-bottom: .9vh;
+}
+
+#container{
+    height: 85vh;
+    margin: 1%;
+    display: grid;
+    grid-template-rows:  2vh 19vh 2vh 30vh 2vh 19vh 3vh;
+    grid-row-gap: 1.3vh;
+    grid-template-areas: " heading1 . . . "
+                         " header header header . "
+                         " heading2 . . ."
+                         " preview content content content"
+                         " heading3 . . ."
+                         " footer footer footer . "
+                         " end end end end " ;
+}
+
+#htmlheading{
+    width: 100%;
+    grid-area: heading1;
+    font-size: 1.25vw;
+    font-weight: bold;
+    margin: 0.5vh;
+}
+#extra{
+    grid-area:heading2;
+    color:black;
+}
+
+#cssheading{
+    width: 100%;
+    grid-area: heading3;
+    font-size: 1.25vw;
+    font-weight: bold;
+    margin: 0.5vh;
+}
+
+#previewheading
+{
+    grid-area: preview;
+    font-weight: bold;
+    font-size: 1.5vw;
+    margin-top: 12vh;
+    margin-right: 1vw;
+    margin-left: 8vw;
+    text-align: center;
+}
+
+#ending{
+    grid-area: end;
+    width: 100%;
+    text-align: center;
+    font-size: 1vw;
+    margin-top:3vh;
+}
+
+textarea{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(34, 30, 51); 
+    color:white;
+    font-size: 1vw;
+
+}
+
+#htmlpart{
+    width: 100%;
+    grid-area: header;
+    background-color: rgb(34, 30, 51);
+    color: white;
+    border-width: 2px;
+    border-color: white;
+    border-style: solid;
+    
+} 
+#csspart{
+    width: 100%;
+    grid-area: footer;
+    background-color: rgb(34, 30, 51);
+    color: white;
+    border-width: 1%;
+    border-color: white;
+    border-style: solid;
+} 
+
+#previewpart{
+    grid-area: content;
+    background-color: rgb(34, 30, 51);
+    color:white;
+    border-width: 2px;
+    border-color: white;
+    border-style: solid;
+    font-size: 1.5vw;
+
+}
+
+@media(max-width:500px)
+{
+    h1{
+        margin-bottom: 6vh;
+    }
+    #container{
+        display:flex;
+        flex-direction:column;
+        height: 90%;
+    }
+    
+    #htmlheading{
+        font-size: 4vw;
+    }
+    #cssheading{
+        font-size: 4vw;
+    }
+    
+    #previewheading{
+        font-size: 5vw;
+        margin-top:1vh;
+        display: flex;
+    }
+    #htmlpart{
+        width: 100%;
+        height: 15vh;
+    }
+    #csspart{
+        width: 100%;
+        height: 15vh;
+    }
+    
+    #previewpart{
+        width: 100%;
+        height: 20vh;
+    }
+    #ending{
+        font-size: 2.5vw;
+        margin-top: 5vh;
+    }
+}
