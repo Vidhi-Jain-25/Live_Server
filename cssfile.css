@@ -99,7 +99,7 @@ textarea{
     border-style: solid;
 } 
 
-#previewpart{
+#previewparttext{
     grid-area: content;
     background-color: rgb(34, 30, 51);
     color:white;
@@ -107,9 +107,6 @@ textarea{
     border-color: white;
     border-style: solid;
     font-size: 1.5vw;
-    height:30vh;
-    width:100%;
-
 }
 
 @media(max-width:500px)
@@ -144,7 +141,7 @@ textarea{
         height: 15vh;
     }
     
-    #previewpart{
+    #previewparttext{
         width: 100%;
         height: 20vh;
     }
