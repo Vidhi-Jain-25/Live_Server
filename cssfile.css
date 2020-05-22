@@ -101,6 +101,7 @@ textarea{
 
 #previewparttext{
     grid-area: content;
+    width:100%;
     background-color: rgb(34, 30, 51);
     color:white;
     border-width: 2px;
