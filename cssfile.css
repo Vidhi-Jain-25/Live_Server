@@ -115,7 +115,7 @@ textarea{
 {
     h1{
         margin-bottom: 6vh;
-        text-shadow:0px;
+        text-shadow: 0vw 0vh;
     }
     #container{
         display:flex;
