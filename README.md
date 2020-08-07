@@ -10,4 +10,4 @@ Makes our existing server live, with live reload capability for the dynamic HTML
 
 # Mobile View 
 
-![](images/Mobile_view.png)
+![](images/Mobile_view/Mobile_view.png)
